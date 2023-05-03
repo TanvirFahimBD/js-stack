@@ -1,15 +1,19 @@
 import React from 'react';
+import Meta from '../component/Meta'
 import styles from '../../styles/Layout.module.css';
 import Nav from './Nav';
 import Header from './Header';
 
 const Layout = ({ children }) => {
     return (
-        <div className={styles.container}>
-            <Nav />
-            <Header />
-            {children}
-        </div>
+        <>
+            <Meta />
+            <div className={styles.container}>
+                <Nav />
+                <Header />
+                {children}
+            </div>
+        </>
     );
 };
 

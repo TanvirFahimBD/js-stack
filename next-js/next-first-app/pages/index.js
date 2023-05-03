@@ -4,16 +4,14 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import ArticleList from './component/ArticleList';
+import Meta from './component/Meta';
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home({ articles }) {
   return (
     <div>
-      <Head>
-        <title>WebDev Articles</title>
-      </Head>
-      <h1>New Articles </h1>
+      <Meta />
       <ArticleList articles={articles} />
     </div>
   )

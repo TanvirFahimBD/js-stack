@@ -2,20 +2,24 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import React from 'react';
 import { server } from '../../../config'
+import Meta from '@/pages/component/Meta';
 
 const article = ({ article }) => {
     // const router = useRouter();
     // const { id } = router.query;
     return (
-        <div>
-            <h1>Article {article.id}</h1>
-            <h2>{article.title}</h2>
-            <h4>{article.body}</h4>
-            <br />
-            <Link href='/'>
-                <h5>Go back</h5>
-            </Link>
-        </div>
+        <>
+            <Meta title={article.title} />
+            <div>
+                <h1>Article {article.id}</h1>
+                <h2>{article.title}</h2>
+                <h4>{article.body}</h4>
+                <br />
+                <Link href='/'>
+                    <h5>Go back</h5>
+                </Link>
+            </div>
+        </>
     );
 };
 
