@@ -1,5 +1,5 @@
 import React from 'react';
-import Meta from '../component/Meta'
+import Meta from './Meta'
 import styles from '../../styles/Layout.module.css';
 import Nav from './Nav';
 import Header from './Header';

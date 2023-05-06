@@ -3,8 +3,8 @@ import { server } from '../config';
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
-import ArticleList from './component/ArticleList';
-import Meta from './component/Meta';
+import ArticleList from './components/ArticleList';
+import Meta from './components/Meta';
 
 const inter = Inter({ subsets: ['latin'] })
 

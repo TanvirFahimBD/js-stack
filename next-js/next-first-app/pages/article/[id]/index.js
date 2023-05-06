@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import React from 'react';
 import { server } from '../../../config'
-import Meta from '@/pages/component/Meta';
+import Meta from '@/pages/components/Meta';
 
 const article = ({ article }) => {
     // const router = useRouter();
